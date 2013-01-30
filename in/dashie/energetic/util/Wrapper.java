@@ -22,22 +22,41 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package in.dashie.energetic;
-
-import in.dashie.energetic.util.Wrapper;
-
-import java.io.File;
+package in.dashie.energetic.util;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.src.EntityClientPlayerMP;
+import net.minecraft.src.FontRenderer;
+import net.minecraft.src.PlayerControllerMP;
+import net.minecraft.src.RenderGlobal;
+import net.minecraft.src.Session;
+import net.minecraft.src.WorldClient;
 
-public class Energetic {
-	public static final String NAME = "Energetic";
-	public static final String VERSION = "1.0";
-	public static File DIR;
+public class Wrapper {
+	public static Minecraft mc;
 	
-	public Energetic() {
-		DIR = new File(Wrapper.mc.getMinecraftDir(), NAME + "Public");
-		DIR.mkdirs();
-		Wrapper.mc = Minecraft.getMinecraft();
+	public static PlayerControllerMP getController() {
+		return mc.playerController;
 	}
+	
+	public static WorldClient getWorld() {
+		return mc.theWorld;
+	}
+	
+	public static RenderGlobal getRenderGlobal() {
+		return mc.renderGlobal;
+	}
+	
+	public static EntityClientPlayerMP getPlayer() {
+		return mc.thePlayer;
+	}
+	
+	public Session getSession() {
+		return mc.session;
+	}
+	
+	public FontRenderer getFont() {
+		return mc.fontRenderer;
+	}
+	
 }

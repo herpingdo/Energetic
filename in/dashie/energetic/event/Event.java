@@ -22,22 +22,8 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package in.dashie.energetic;
+package in.dashie.energetic.event;
 
-import in.dashie.energetic.util.Wrapper;
+public class Event {
 
-import java.io.File;
-
-import net.minecraft.client.Minecraft;
-
-public class Energetic {
-	public static final String NAME = "Energetic";
-	public static final String VERSION = "1.0";
-	public static File DIR;
-	
-	public Energetic() {
-		DIR = new File(Wrapper.mc.getMinecraftDir(), NAME + "Public");
-		DIR.mkdirs();
-		Wrapper.mc = Minecraft.getMinecraft();
-	}
 }
