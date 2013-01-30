@@ -1,5 +1,7 @@
 package net.minecraft.client;
 
+import in.dashie.energetic.event.EventOnStartup;
+
 import java.awt.BorderLayout;
 import java.awt.Canvas;
 import java.awt.Color;
@@ -479,6 +481,7 @@ public abstract class Minecraft implements Runnable, IPlayerUsage
         {
             this.toggleFullscreen();
         }
+        EventOnStartup.onStartup();
     }
 
     /**

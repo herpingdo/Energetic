@@ -27,6 +27,12 @@ package in.dashie.energetic.event;
 import in.dashie.energetic.Energetic;
 
 public class EventOnStartup extends Event {
+	/**
+	 * Minecraft.startGame();
+	 * EventOnStartup.onStartup();
+	 * 
+	 * */
+	
 	public static void onStartup() {
 		new Energetic();
 	}
