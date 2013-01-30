@@ -27,3 +27,4 @@ package in.dashie.energetic.event;
 public class Event {
 
 }
+ 
