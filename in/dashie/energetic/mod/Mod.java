@@ -31,4 +31,7 @@ public abstract class Mod {
 	public abstract double getVersion();
 	public abstract String getName();
 	public abstract String getDeveloper();
+	
+	public abstract String getCategory();
+	public abstract int getColor();
 }
