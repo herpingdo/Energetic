@@ -180,6 +180,7 @@ public class ThreadDownloadResources extends Thread
                 return;
             }
 
+
             var7.write(var5, 0, var9);
             var7.close();
         }
