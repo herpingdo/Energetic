@@ -24,6 +24,6 @@
  */
 package in.dashie.energetic.mod;
 
-public interface IGameTick {
-	public void onGameTick();
+public interface IChatRecieved {
+	public void onChatRecieved(String chatMessage);
 }

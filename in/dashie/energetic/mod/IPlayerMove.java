@@ -24,6 +24,6 @@
  */
 package in.dashie.energetic.mod;
 
-public interface IGameTick {
-	public void onGameTick();
+public interface IPlayerMove {
+	public void onPlayerMove(double posX, double posY, double posZ, boolean onGround);
 }
